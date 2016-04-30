@@ -1,0 +1,35 @@
+<!--DOCTYPE html -->
+<html>
+<body style="font-family:Helvetica; background-color: rgba(0,0,0, 0.3);">
+  <h1><a href= /posts/ ><img src = "https://static1.squarespace.com/static/540934dee4b04f2a4feb92d7/t/55772c50e4b01be17f660360/1433873502215/RSS" style="width:50px;height:52px;">
+  </a>
+    <center>Post Title: {{ title }} </center></h1>
+  <style>
+  p {
+      border: 2px solid grey;
+        background-color: rgba(255,255,255, 0.5)
+  }
+  </style>
+
+<!--<p>  {{ instance.title }} <br/></p> -->
+<p><font style="font-family:Helvetica;" size='3'>{{ instance.content }} </font><br/></p>
+<p><small>Date of creation: {{ instance.timestamp }}<br/>
+Last modified: {{ instance.updated }}<br/>
+Post ID: {{ instance.id }}
+Post PK: {{ instance.pk }}
+<br/> </small> </p>
+
+<style>
+footer{
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: 1em;
+}
+</style>
+<footer><center><small><font size = '1'> Design © 2016 Teodor Ivanov. All rights resereved. </font></small></center></footer>
+</body>
+
+
+</html>
